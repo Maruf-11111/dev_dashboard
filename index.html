@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-none" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]  p-2" >
+    
+    <header class="mt-6 mx-10">
+        <div class="navbar  flex bg-base-100 shadow-sm justify-between rounded">
+            <div class="flex items-center justify-center ">
+              <img src="/assets/logo.png" alt="">
+              <a class="btn btn-ghost "> <span class="text-2xl" >Dev</span>  <span class=" font-bold text-2xl">Board</span></a>
+            </div>
+           
+            <div class="flex gap-6 items-center">
+                <div class="flex gap-3 bg-[#F4F7FF] p-2 rounded-full ">
+                    <img src="/assets/checkbox.png" alt=""> 
+                    <div id="completed-task" class="text-xl font-bold ">00</div>
+                </div>
+                <button id="theme-btn"><img src="/assets/theme-btn.png" alt=""></button>
+
+            </div>
+              
+          </div>
+          
+        
+
+
+    </header>
+    <main class=" flex mt-10 mt-6 mx-10 ">
+        <!-- Main Dashboard -->
+        <div class="w-3/4 mr-4 bg-white rounded  ">
+            <!-- Top part -->
+            <div class="m-4 flex gap-3 ">
+                <div class=" w-2/7 flex gap-3 justify-center items-center bg-[#F4F7FF] rounded-xl h-25 ">
+                    <img class="bg-white p-3 rounded-full" src="/assets/checkbox.png" alt="">
+                    <div>
+                    <span>Task Assigned</span>
+                    <div id="assigned-task" class="text-2xl font-bold">06</div>
+                </div>
+
+                </div>
+                <div class="w-3/7 flex gap-3 p-10 items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl h-25">
+                    <img src="/assets/board.png" alt="">
+                    <div class="text-white text-2xl">Discover Something <br> New Today !</div>
+
+                </div>
+                <div class="w-2/7 flex gap-3 justify-center items-center bg-[#F4F7FF] rounded-xl h-25">
+                    
+                    <div class="bg-white p-3 rounded-full"><img  src="/assets/calender.png" alt="">
+                    </div>
+                        <p id="date-display"></p>
+
+                </div>
+
+            </div>
+        <!-- Cards -->
+        <div class="grid grid-cols-3 grid-rows-2 gap-4 p-4 mt-10">
+            <div class=" bg-[#F4F7FF] p-4 flex flex-col gap-4 rounded-xl ">
+                <span class="bg-white rounded w-25 flex justify-center ">
+                ShopEase
+                </span>
+                <div class="text-2xl ">Fix Mobile Button Issue</div>
+                <div class="bg-white text-gray-500 p-2 rounded">
+                Debug Using Chrome <br>
+                DevTools,check for overlappi..
+                </div>
+                <div class="flex justify-between">
+                <div>
+                Deadline <br>
+                <span> 21 March, 2025</span>
+                </div>
+                <button id="fix-mobile" class="bg-blue-500 text-white rounded p-3" disabled! >Completed</button>
+                </div>
+            </div>
+            <div class=" bg-[#F4F7FF]  bg-[#F4F7FF] p-4 flex flex-col gap-4 rounded-xl">
+                <span class="bg-white rounded w-25 flex justify-center ">
+                    ShopEase
+                    </span>
+                    <div class="text-2xl ">Add Dark Mode</div>
+                    <div class="bg-white text-gray-500 p-2 rounded">
+                    Store the user's preference in <br> LocalStorage, update css variable 
+                    
+                    </div>
+                    <div class="flex justify-between">
+                    <div>
+                    Deadline <br>
+                    <span> 21 March, 2025</span>
+                    </div>
+                    <button id="add-pay" class="bg-blue-500 text-white rounded p-3">Completed</button>
+                    </div>
+
+
+
+            </div>
+            <div class=" bg-[#F4F7FF]  bg-[#F4F7FF] p-4 flex flex-col gap-4 rounded-xl">
+                <span class="bg-white rounded w-25 flex justify-center ">
+                    Meta
+                    </span>
+                    <div class="text-2xl "> Optimize Home Page </div>
+                    <div class="bg-white text-gray-500 p-2 rounded">
+                    Debug Using Chrome <br>
+                    DevTools,check for overlappi..
+                    </div>
+                    <div class="flex justify-between">
+                    <div>
+                    Deadline <br>
+                    <span> 21 March, 2025</span>
+                    </div>
+                    <button id="add-new" class="bg-blue-500 text-white rounded p-3">Completed</button>
+                    </div>
+
+            </div>
+            <div class=" bg-[#F4F7FF] bg-[#F4F7FF] p-4 flex flex-col gap-4 rounded-xl">
+                <span class="bg-white rounded w-25 flex justify-center ">
+                    ShopEase
+                    </span>
+                    <div class="text-2xl ">Add New Emoji </div>
+                    <div class="bg-white text-gray-500 p-2 rounded">
+                    Debug Using Chrome <br>
+                    DevTools,check for overlappi..
+                    </div>
+                    <div class="flex justify-between">
+                    <div>
+                    Deadline <br>
+                    <span> 21 March, 2025</span>
+                    </div>
+                    <button id="fix-video" class="bg-blue-500 text-white rounded p-3">Completed</button>
+                    </div>
+            </div>
+            <div class=" bg-[#F4F7FF]  bg-[#F4F7FF] p-4 flex flex-col gap-4 rounded-xl">
+                <span class="bg-white rounded w-25 flex justify-center ">
+                    Google LLC
+                    </span>
+                    <div class="text-2xl ">Integrate OpenAI API</div>
+                    <div class="bg-white text-gray-500 p-2 rounded">
+                    Debug Using Chrome <br>
+                    DevTools,check for overlappi..
+                    </div>
+                    <div class="flex justify-between">
+                    <div>
+                    Deadline <br>
+                    <span> 21 March, 2025</span>
+                    </div>
+                    <button id= "ai-search" class="bg-blue-500 text-white rounded p-3">Completed</button>
+                    </div>
+            </div>
+            <div class=" bg-[#F4F7FF]  p-4 flex flex-col gap-4 rounded-xl">
+                <span class="bg-white rounded w-25 flex justify-center ">
+                    Glassdoar
+                    </span>
+                    <div class="text-2xl ">Improve Job Searching</div>
+                    <div class="bg-white text-gray-500 p-2 rounded">
+                    Debug Using Chrome <br>
+                    DevTools,check for overlappi..
+                    </div>
+                    <div class="flex justify-between">
+                    <div>
+                    Deadline <br>
+                    <span> 21 March, 2025</span>
+                    </div>
+                    <button id="review-site" class="bg-blue-500 text-white rounded p-3"  >Completed</button>
+                    </div>
+            </div>
+        </div>
+
+
+        </div>
+
+
+        <!--  Activity Log Expert  --> 
+        <div class="w-1/4 ml-4 bg-white pt-4 rounded-xl">
+        <div class="flex justify-center items-center gap-3">
+
+            
+            <img src="/assets/activity.png" alt="">
+            <div>Activity Log</div>
+        </div>
+        <div>
+
+        <button id="clear" class=" flex bg-blue-500 text-white rounded p-1 mx-auto mt-5 ">Clear History</button>
+            <div id="message" class="m-4 flex flex-col gap-4">
+
+            </div>
+
+        </div>
+        
+        </div>
+
+
+
+    </main>
+   <script src="/backend.js"></script>
+
+
+</body>
+</html>
